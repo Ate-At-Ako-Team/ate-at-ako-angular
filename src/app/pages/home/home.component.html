@@ -1,0 +1,35 @@
+
+  
+  <section class="hero">
+    <div class="overlay">
+      <h1>Together, We Make a Difference</h1>
+      <p>Join us in empowering communities through education and outreach.</p>
+      <a routerLink="/volunteer" class="btn btn-orange">Get Involved</a>
+    </div>
+  </section>
+  
+  <section class="about">
+    <div class="container">
+      <div class="content">
+        <img src="https://images.pexels.com/photos/31018751/pexels-photo-31018751/free-photo-of-beachside-kite-and-bubble-fun-with-kids.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Volunteers">
+        <div class="text">
+          <h2>About Us</h2>
+          <p>Ate at Ako empowers communities by providing educational resources and support to those in need.</p>
+          <a routerLink="/about" class="btn btn-dark">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="gallery">
+    <div class="container">
+      <h2>Photo Gallery</h2>
+      <div class="slideshow">
+        <div *ngFor="let image of images" class="slide">
+          <img [src]="image" alt="Event Image">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  

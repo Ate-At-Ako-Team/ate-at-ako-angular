@@ -1,0 +1,65 @@
+.hero {
+    background: url('https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg') center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .contact-form {
+    padding: 50px;
+    background: #FAF3E0;
+    text-align: center;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 50%;
+      margin: auto;
+  
+      label {
+        font-weight: bold;
+        color: #264653;
+      }
+  
+      input, textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+      textarea {
+        height: 100px;
+      }
+  
+      button {
+        background: #E76F51;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .direct-contact {
+    padding: 50px;
+    text-align: center;
+    background: #E9C46A;
+  
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+  
+      a {
+        font-size: 24px;
+        color: #264653;
+      }
+    }
+  }
+  

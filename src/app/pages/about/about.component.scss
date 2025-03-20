@@ -1,0 +1,59 @@
+
+.hero {
+    background: url('https://images.pexels.com/photos/31018751/pexels-photo-31018751/free-photo-of-beachside-kite-and-bubble-fun-with-kids.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .mission-vision {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background: #FAF3E0;
+  
+    h2 {
+      color: #264653;
+    }
+  }
+  
+  .journey {
+    padding: 50px;
+    text-align: center;
+    background: #E9C46A;
+  
+    .timeline {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .event {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  .challenges-solutions {
+    padding: 50px;
+    text-align: center;
+    background: #F4A261;
+  
+    .grid {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .challenge, .solution {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 45%;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+  

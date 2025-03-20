@@ -1,0 +1,87 @@
+.hero {
+    background: url('https://images.pexels.com/photos/6646852/pexels-photo-6646852.jpeg') center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .sign-up-form {
+    padding: 50px;
+    background: #FAF3E0;
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+  
+      label {
+        font-weight: bold;
+        color: #264653;
+      }
+  
+      input, select {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+      .checkbox-group {
+        display: flex;
+        gap: 10px;
+      }
+  
+      button {
+        background: #E76F51;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+  
+  .why-volunteer {
+    padding: 50px;
+    text-align: center;
+    background: #E9C46A;
+  
+    .grid {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .reason {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 30%;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  .testimonials {
+    padding: 50px;
+    text-align: center;
+    background: #F4A261;
+  
+    .testimonial-slider {
+      blockquote {
+        font-style: italic;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+  
+      span {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    }
+  }
+  

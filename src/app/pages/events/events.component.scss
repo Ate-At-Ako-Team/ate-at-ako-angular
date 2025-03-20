@@ -1,0 +1,40 @@
+.hero {
+    background: url('/assets/IMG-8634.jpg') center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .upcoming-events, .past-events {
+    padding: 50px;
+    background: #FAF3E0;
+  
+    .event-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  
+      .btn {
+        background: #E76F51;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  
+    .grid {
+      display: flex;
+      gap: 20px;
+  
+      .event-img {
+        width: 45%;
+      }
+    }
+  }
+  

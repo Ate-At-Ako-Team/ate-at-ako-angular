@@ -1,0 +1,28 @@
+<nav class="navbar">
+    <div class="container">
+      <a routerLink="/" class="logo">Ate at Ako</a>
+  
+      <!-- Hamburger Icon (Only Visible on Mobile) -->
+      <div class="menu-toggle" (click)="toggleMenu()">
+        <span *ngIf="!isMenuOpen">☰</span> <!-- Unicode menu icon -->
+        <span *ngIf="isMenuOpen">✖</span> <!-- Unicode close icon -->
+      </div>
+      
+      
+      
+  
+      <!-- Navigation Links -->
+      <ul class="nav-links" [ngClass]="{'open': isMenuOpen}">
+        <li><a routerLink="/" (click)="closeMenu()">Home</a></li>
+        <li><a routerLink="/about" (click)="closeMenu()">About</a></li>
+        <li><a routerLink="/events" (click)="closeMenu()">Events</a></li>
+        <li><a routerLink="/volunteer" (click)="closeMenu()">Volunteer</a></li>
+        <li><a routerLink="/donate" (click)="closeMenu()">Donate</a></li>
+        <li><a routerLink="/gallery" (click)="closeMenu()">Gallery</a></li>
+        <li><a routerLink="/contact" (click)="closeMenu()">Contact</a></li>
+      </ul>
+  
+      <a routerLink="/donate" class="cta-button">Donate Now</a>
+    </div>
+  </nav>
+  

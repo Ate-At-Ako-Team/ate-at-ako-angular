@@ -1,0 +1,253 @@
+/* 🌟 General Styles */
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF3E0;
+    color: #264653;
+  }
+  
+  h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* 🔹 Responsive Navbar */
+  .navbar {
+    background: #264653;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+    .logo {
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+  
+    nav {
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+  
+        li a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: bold;
+          transition: color 0.3s ease-in-out;
+  
+          &:hover {
+            color: #F4A261;
+          }
+        }
+      }
+    }
+  
+    /* 🔽 Mobile Menu */
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #264653;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+      }
+  
+      nav ul.active {
+        display: flex;
+      }
+  
+      .menu-toggle {
+        display: block;
+      }
+    }
+  }
+  
+  /* 🎭 Hero Section */
+  .hero {
+    background: url("https://images.pexels.com/photos/31054697/pexels-photo-31054697/free-photo-of-boys-playing-football-on-a-dusty-field.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      color: white;
+      border-radius: 10px;
+      max-width: 80%;
+  
+      h1 {
+        font-size: 42px;
+        font-family: "Poppins", sans-serif;
+      }
+  
+      p {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+  
+      .btn-orange {
+        background: #F4A261;
+        color: #fff;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        transition: background 0.3s;
+  
+        &:hover {
+          background: #E76F51;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .overlay {
+        padding: 1.5rem;
+        h1 {
+          font-size: 32px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  
+  /* 🔥 About Section */
+  .about {
+    padding: 80px 5%;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      max-width: 1200px;
+      gap: 40px;
+    }
+  
+    .text {
+      max-width: 50%;
+    }
+  
+    h2 {
+      font-size: 32px;
+      color: #264653;
+      margin-bottom: 15px;
+    }
+  
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  
+    img {
+      width: 45%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .btn-dark {
+      background: #264653;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      display: inline-block;
+  
+      &:hover {
+        background: #1E3A3A;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        text-align: center;
+      }
+  
+      .text, img {
+        max-width: 100%;
+      }
+    }
+  }
+  
+  /* 🖼️ Photo Gallery */
+  .gallery {
+    padding: 60px 5%;
+    text-align: center;
+  
+    h2 {
+      font-size: 32px;
+      color: #264653;
+      margin-bottom: 30px;
+    }
+  
+    .slideshow {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    .slide {
+      min-width: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+  
+    img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    @media (max-width: 768px) {
+      .slideshow {
+        max-width: 100%;
+      }
+    }
+  }
+  
+  /* ⚡ Footer */
+  .footer {
+    background: #264653;
+    color: white;
+    padding: 20px 5%;
+    text-align: center;
+    font-size: 14px;
+  }
+  

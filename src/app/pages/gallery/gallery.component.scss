@@ -1,0 +1,52 @@
+.hero {
+    background: url('https://images.pexels.com/photos/296649/pexels-photo-296649.jpeg') center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .photo-gallery {
+    padding: 50px;
+    background: #FAF3E0;
+    text-align: center;
+  
+    .grid {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .album {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      width: 30%;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+  
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+  
+  .video-highlights {
+    padding: 50px;
+    text-align: center;
+    background: #E9C46A;
+  
+    .video-grid {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    iframe {
+      width: 45%;
+      height: 250px;
+      border-radius: 10px;
+    }
+  }
+  
